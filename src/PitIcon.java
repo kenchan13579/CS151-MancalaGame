@@ -3,6 +3,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.util.Random;
 import java.util.logging.Level;
@@ -50,8 +51,8 @@ public class PitIcon extends ImageIcon
             width = 100;
             try
             {
-                pitImg = ImageIO.read(this.getClass().getResource(theme.getEndPitFile()));
-                marbImg = ImageIO.read(this.getClass().getResource(theme.getStoneImage()));
+               pitImg = ImageIO.read(new File(theme.getPitFile()));
+                marbImg = ImageIO.read(new File(theme.getStoneImage()));
             } catch (IOException ex)
             {
                 Logger.getLogger(PitIcon.class.getName()).log(Level.SEVERE, "couldn't paint icon", ex);
@@ -62,8 +63,8 @@ public class PitIcon extends ImageIcon
             width = 100;
             try
             {
-                pitImg = ImageIO.read(this.getClass().getResource(theme.getPitFile()));
-                marbImg = ImageIO.read(this.getClass().getResource(theme.getStoneImage()));
+                pitImg = ImageIO.read(new File(theme.getPitFile()));
+                marbImg = ImageIO.read(new File(theme.getStoneImage()));
             } catch (IOException ex)
             {
                 Logger.getLogger(PitIcon.class.getName()).log(Level.SEVERE, "couldn't paint icon", ex);

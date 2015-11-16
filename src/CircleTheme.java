@@ -6,7 +6,8 @@ public class CircleTheme implements BoardTheme {
      * @return the path to the stone image
      */
     public String getStoneImage() {
-        String s = "/img/s1.png";
+        String s = "img/s1.png";
+        
         return s;
     }
     /**
@@ -15,7 +16,7 @@ public class CircleTheme implements BoardTheme {
      */
     @Override
     public String getPitFile() {
-        return "/img/pit2.png";
+        return "img/pit2.png";
     }
     /**
      * Loads the mancala pit
@@ -24,7 +25,7 @@ public class CircleTheme implements BoardTheme {
      */
     @Override
     public String getEndPitFile() {
-        return "/img/mancala2.png";
+        return "img/mancala2.png";
     }
 
     

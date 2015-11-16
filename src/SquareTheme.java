@@ -7,7 +7,7 @@ public class SquareTheme implements BoardTheme {
      */
     @Override
     public String getStoneImage() {
-        return "/img/s2.png";
+        return "img/s2.png";
     }
 
     /**
@@ -17,7 +17,7 @@ public class SquareTheme implements BoardTheme {
      */
     @Override
     public String getEndPitFile() {
-        return "/img/mancala1.png";
+        return "img/mancala1.png";
     }
 
     /**
@@ -27,6 +27,6 @@ public class SquareTheme implements BoardTheme {
      */
     @Override
     public String getPitFile() {
-        return "/img/pit1.png";
+        return "img/pit1.png";
     }
 }
